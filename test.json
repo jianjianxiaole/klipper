@@ -1,0 +1,26 @@
+{"id": 123, "method": "info", "params": {}}
+
+{"id": 123, "method": "gcode/script", "params": {"script": "G91"}}
+{"id": 123, "method": "gcode/script", "params": {"script": "G90"}}
+{"id": 123, "method": "gcode/script", "params": {"script": "G1 x1 F7800"}}
+{"id": 123, "method": "gcode/script", "params": {"script": "G28 x"}}
+
+{"id": 123, "method": "gcode/script", "params": {"script": "G1 X1 F7800"}}
+{"id": 123, "method": "gcode/script", "params": {"script": "G1 X1 F7800"}}
+{"id": 123, "method": "gcode/script", "params": {"script": "G1 X1 0"}}
+
+{"id": 123, "method": "gcode/script", "params": {"script": "G91"}}
+{"id": 123, "method": "gcode/script", "params": {"script": "G1 X10 F78000"}}
+
+{"id": 123, "method": "gcode/script", "params": {"script": "G1 X-10 F7800"}}
+{"id": 123, "method": "gcode/script", "params": {"script": "G1 X-5 F7800"}}
+
+{"id": 123, "method": "gcode/script", "params": {"script": "M114"}}
+
+python3 ~/klipper/lib/canboot/flash_can.py -q
+~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
+
+{"id": 123, "method": "gcode/firmware_restart"}
+
+
+~/klippy-env/bin/python ~/klipper/scripts/whconsole.py /tmp/klippy_uds
